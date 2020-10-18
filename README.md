@@ -81,5 +81,12 @@ fi
 
 <p>Now you can configure the desktop, install additional software like a Web Browser.</p>
 
+<h2>Download my latest build</h2>
+<p>You can download my latest build here</p>
+<ul>
+  <li><a href="https://bitnuts.de/browserbox/linux-x86_64_en.iso">Debian Browser Box (ISO) (EN) [2020-10-17]</a></li>
+  <li><a href="https://bitnuts.de/browserbox/linux-x86_64_de.iso">Debian Browser Box (ISO) (DE) [2020-10-17]</a></li>
+</ul>
+
 <h2>Need help?</h2>
-You need help? Just contact me via e-mail hazelfazel @ bitnuts.de
+Just contact me via e-mail hazelfazel @ bitnuts.de

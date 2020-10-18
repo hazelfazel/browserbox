@@ -1,5 +1,6 @@
 <h1>Browser Box</h1>
 <p>A lightweight GNU/Linux Debian installation just for browsing.</p>
+<img src="browserbox.gif">
 
 <h2>What is the Browser Box?</h2>
 <p>I wanted a browser in a virtual machine that is read-only. I started with a minimal <a href="https://www.debian.org/">Debian</a> net installation, added <a href="https://www.xfce.org/">XFCE</a>, Breeze icon/cursor theme, ARC-theme and installed <a href="https://www.chromium.org/">Chromium</a> as a browser. Then I used the <a href="https://www.linux-live.org/">Linux Live Kit</a> to build a tiny ISO image out of the installation. My current Browser Box just requires 485 MB for the English version, the German localization takes around 504 MB in size. Both including <a href="https://www.virtualbox.org/">Virtual Box</a>'s Guest Additions for more convenience in my VM environment.</p>

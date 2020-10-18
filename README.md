@@ -2,13 +2,13 @@
 <p>A lightweight GNU/Linux Debian installation just for browsing.</p>
 
 <h2>What is the Browser Box?</h2>
-<p>I wanted a browser in a virtual machine that is read-only. I started with a minimal <a href="https://www.debian.org/">Debian</a> net installation, added <a href="https://www.xfce.org/">XFCE</a>, Breeze and ARC theme and installed <a href="https://www.chromium.org/">Chromium</a>. Then I used the <a href="https://www.linux-live.org/">Linux Live Kit</a> to build a tiny ISO image out of the installation. My current Browser Box just requires 485 MB for the English version, the German localization takes around 504 MB. Both including <a href="https://www.virtualbox.org/">Virtual Box</a>'s Guest Additions for more convenience.</p>
+<p>I wanted a browser in a virtual machine that is read-only. I started with a minimal <a href="https://www.debian.org/">Debian</a> net installation, added <a href="https://www.xfce.org/">XFCE</a>, Breeze icon/cursor theme, ARC-theme and installed <a href="https://www.chromium.org/">Chromium</a> as a browser. Then I used the <a href="https://www.linux-live.org/">Linux Live Kit</a> to build a tiny ISO image out of the installation. My current Browser Box just requires 485 MB for the English version, the German localization takes around 504 MB in size. Both including <a href="https://www.virtualbox.org/">Virtual Box</a>'s Guest Additions for more convenience in my VM environment.</p>
 
 <h2>What is Browser Box good for?</h2>
-<p>My Browser Box helps me to surf without leaving permanent cookies and other tracking stuff. Having a read-only file system and using a VM also provides better security. If you do research on malware or as I do, analyze suspicious URLs and other malicious content, a virtualized linux box can be very useful. But you can also use the Browser Box as a Kiosk System, in schools or for trainings. It is easy to deploy and handle. You can also add specific software you need e.g. for a workshop or online seminar.</p>
+<p>My Browser Box helps me to surf without leaving permanent cookies and other tracking stuff. I feel safer when surfing the Web knowing that nothing is permanently stored onto my working PC. Having a ISO read-only file system and using a VM also provides additional security. If you do research on malware as I do, or analyze suspicious URLs and other malicious content, a virtualized GNU/Linux can be very handy. You could also use the Browser Box as some kind of Kiosk System (Hotel Lobby, School, Training Facilities, etc). It is easy to deploy and handle. You can also add specific software as you need. It is a great tool to deploy for demos, workshops and online trainings.</p>
 
 <h2>Building your own Browser Box</h2>
-<p>The process to build such a live ISO is straight forward. In the following section I will provide a step-by-step guide, so you can build your own Browser Box.</p>
+<p>The process to build such a live ISO is straight forward. In the following section I will provide a step-by-step guide, so you can build your own Browser Box. If you do not want to build it by your own you can download one of my builds below.</p>
 
 <h3>Start with the Debian Net Installer</h3>
 <p>Boot the "Debian Net Installer" ISO from you favorite hypervisor. I use Virtual Box and have included basic VDI/VBOX here.<br>
@@ -64,11 +64,11 @@ sudo mkdir /etc/systemd/system/getty@tty1.service.d
 sudo nano /etc/systemd/system/getty@tty1.service.d/override.conf
 </pre>
 
-<p>Now add the following into the override.conf file:</p>
+<p>Now add the following into the override.conf file. Please note: If you have not chosen the user "browserbox" as default user, you SHALL use the your specific username instead of browserbox below:</p>
 <pre>
 [Service]
 ExecStart=
-ExecStart=-/sbin/agetty --autologin benutzername --noclear %I $TERM
+ExecStart=-/sbin/agetty --autologin browserbox --noclear %I $TERM
 Type=idle
 </pre>
 
@@ -82,11 +82,16 @@ fi
 <p>Now you can configure the desktop, install additional software like a Web Browser.</p>
 
 <h2>Download my latest build</h2>
+
 <p>You can download my latest build here</p>
 <ul>
   <li><a href="https://bitnuts.de/browserbox/linux-x86_64_en.iso">Debian Browser Box (ISO) (EN) [2020-10-17]</a></li>
   <li><a href="https://bitnuts.de/browserbox/linux-x86_64_de.iso">Debian Browser Box (ISO) (DE) [2020-10-17]</a></li>
 </ul>
+
+<h3>Disclaimer</h3>
+
+My Browser Box and its components are provided “as is”. You bear the risk of use. We do not express any warranties, representations or conditions. You may not claim any direct or other damages, including consequential damages, lost profits, special, indirect or incidental damages. Consider yourself warned and informed.
 
 <h2>Need help?</h2>
 Just contact me via e-mail hazelfazel @ bitnuts.de

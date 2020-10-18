@@ -83,8 +83,8 @@ fi
 
 <h2>Need help?</h2>
 <center>
-\\|||//
-(o o)
------------------==--------ooO--(_)--Ooo--------==-----------------
+\\|||//<br>
+(o o)<br>
+-----------------==--------ooO--(_)--Ooo--------==-----------------<br>
 You need help? Just contact me via e-mail hazelfazel @ bitnuts.de
 </center>

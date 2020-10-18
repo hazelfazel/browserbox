@@ -64,7 +64,7 @@ sudo mkdir /etc/systemd/system/getty@tty1.service.d
 sudo nano /etc/systemd/system/getty@tty1.service.d/override.conf
 </pre>
 
-<p>Now add the following into the override.conf file. Please note: If you have not chosen the user "browserbox" as default user, you SHALL use the your specific username instead of browserbox below:</p>
+<p>Now add the following into the override.conf file. Please note: If you have not chosen the user "browserbox" as default user, you SHALL use your specific username instead of browserbox below:</p>
 <pre>
 [Service]
 ExecStart=

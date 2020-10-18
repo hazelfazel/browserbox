@@ -82,9 +82,9 @@ fi
 <p>Now you can configure the desktop, install additional software like a Web Browser.</p>
 
 <h2>Need help?</h2>
-<center><pre>
+<center>
 \\|||//
 (o o)
 -----------------==--------ooO--(_)--Ooo--------==-----------------
 You need help? Just contact me via e-mail hazelfazel @ bitnuts.de
-</pre></center>
+</center>

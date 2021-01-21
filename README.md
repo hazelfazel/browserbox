@@ -60,9 +60,7 @@ sudo apt-get install --no-install-recommends fonts-arkpandora fonts-liberation
 sudo fc-cache -f
 sudo apt-get install --no-install-recommends arc-theme
 sudo apt-get install thunar-volman gvfs
-
 systemctl set-default multi-user.target
-
 sudo mkdir /etc/systemd/system/getty@tty1.service.d
 sudo nano /etc/systemd/system/getty@tty1.service.d/override.conf
 </pre>

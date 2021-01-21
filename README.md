@@ -61,6 +61,8 @@ sudo fc-cache -f
 sudo apt-get install --no-install-recommends arc-theme
 sudo apt-get install thunar-volman gvfs
 
+systemctl set-default multi-user.target
+
 sudo mkdir /etc/systemd/system/getty@tty1.service.d
 sudo nano /etc/systemd/system/getty@tty1.service.d/override.conf
 </pre>
@@ -92,7 +94,7 @@ fi
 
 <h3>Disclaimer</h3>
 
-My Browser Box and its components are provided “as is”. You bear the risk of use. We do not express any warranties, representations or conditions. You may not claim any direct or other damages, including consequential damages, lost profits, special, indirect or incidental damages. Consider yourself warned and informed.
+This Browser Box and its components are provided “as is”. You bear the risk of use. We do not express any warranties, representations or conditions. You may not claim any direct or other damages, including consequential damages, lost profits, special, indirect or incidental damages. Consider yourself warned and informed.
 
 <h2>Need help?</h2>
 Just contact me via e-mail hazelfazel @ bitnuts.de

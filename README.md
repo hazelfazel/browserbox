@@ -61,6 +61,10 @@ sudo fc-cache -f
 sudo apt-get install --no-install-recommends arc-theme
 sudo apt-get install thunar-volman gvfs
 systemctl set-default multi-user.target
+</pre>
+
+<p>Now you have a basix GNU/Linux OS with XFCE as a Window Manager, sound support, basic tools and a beautiful skin. Now we make the system autologin</p>
+<pre>
 sudo mkdir /etc/systemd/system/getty@tty1.service.d
 sudo nano /etc/systemd/system/getty@tty1.service.d/override.conf
 </pre>

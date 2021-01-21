@@ -60,7 +60,7 @@ sudo apt-get install --no-install-recommends fonts-arkpandora fonts-liberation
 sudo fc-cache -f
 sudo apt-get install --no-install-recommends arc-theme
 sudo apt-get install thunar-volman gvfs
-systemctl set-default multi-user.target
+sudo systemctl set-default multi-user.target
 </pre>
 
 <p>Now you have a basix GNU/Linux OS with XFCE as a Window Manager, sound support, basic tools and a beautiful skin. Now we make the system autologin</p>
